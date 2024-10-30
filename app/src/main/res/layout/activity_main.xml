@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".MainActivity">
+
+        <EditText
+            android:id="@+id/nomeReceitaInput"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/hint_nome_receita"
+            android:inputType="text"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/nomeIngredienteInput"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/hint_nome_ingrediente"
+            android:inputType="text"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/quantidadeInput"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/hint_quantidade"
+            android:inputType="numberDecimal"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/precoInput"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/hint_preco"
+            android:inputType="numberDecimal"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/adicionarIngredienteButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:minHeight="48dp"
+            android:padding="16dp"
+            android:text="@string/adicionar_ingrediente" />
+
+        <EditText
+            android:id="@+id/custoEmbalagensInput"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/hint_custo_embalagens"
+            android:inputType="numberDecimal"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/quantidadeUnidadesInput"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/hint_quantidade_unidades"
+            android:inputType="number"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/percentualLucroInput"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/hint_percentual_lucro"
+            android:inputType="numberDecimal"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/calcularButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:minHeight="48dp"
+            android:padding="16dp"
+            android:text="@string/calcular" />
+
+        <Button
+            android:id="@+id/limparButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:minHeight="48dp"
+            android:padding="16dp"
+            android:text="@string/limpar" />
+
+        <TextView
+            android:id="@+id/resultadoTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:text="@string/resultado"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</LinearLayout>
